@@ -1,2 +1,4 @@
 # loadwav
-lion ; C++; make; .wav; 
+clion ; C++; make; .wav; 
+
+
