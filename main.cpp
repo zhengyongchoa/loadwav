@@ -24,6 +24,7 @@ int main(int argc, char* argv[])
   int samples = data_length * 8 / bits_per_sample; // audio  data  length
   std::vector<int16_t> tmp(samples);
   res = wav_read_data(h_x, reinterpret_cast<unsigned char*>(tmp.data()), data_length);
+  wav_read_close(h_x);
   if (res < 0)
   {
     cerr << "read wav file error: " << res << endl;
